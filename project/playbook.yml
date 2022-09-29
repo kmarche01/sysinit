@@ -2,9 +2,9 @@
 - name: System Initialization
   hosts: localhost
   become: true
+  gather_facts: true
   vars:
     upgrade: true
-    debug: false
     github_token: "{{ vault_github_token }}"
   roles:
     - sysinit
