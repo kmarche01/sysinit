@@ -1,6 +1,7 @@
 ---
 - name: System Initialization
   hosts: localhost
+  connection: local
   become: true
   gather_facts: true
   vars:
